@@ -12,25 +12,41 @@
         android:id="@+id/tvTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ejemplo de uso de OnClick"
+        android:layout_marginTop="16dp"
+        android:text="Salvador Isaías Juárez Alcántara
+        Guillermo Alexander Rodríguez Cortez
+"
+        android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:textAlignment="center"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp"/>
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitulo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Ejemplo de uso de OnClick"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo" />
 
     <ImageView
         android:id="@+id/ivImagenLogo"
         android:layout_width="205dp"
         android:layout_height="157dp"
-        android:layout_marginTop="16dp"
         android:contentDescription="Logo"
-        app:srcCompat="@android:mipmap/sym_def_app_icon"
-        app:layout_constraintTop_toBottomOf="@id/tvTitulo"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTitulo3"
+        app:srcCompat="@android:mipmap/sym_def_app_icon" />
 
     <Switch
         android:id="@+id/SwCambiarModo"
